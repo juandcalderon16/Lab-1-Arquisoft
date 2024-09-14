@@ -1,0 +1,121 @@
+/* Estilo general de la aplicación */
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f2f5;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Estilo del contenedor principal */
+.container {
+  margin-top: auto;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 450px;
+  text-align: center;
+}
+
+/* Estilo para el título principal */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* Estilo de grupo de filtros */
+.filter-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.filter-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #555;
+}
+
+/* Estilo para los inputs y selects */
+input[type="date"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  transition: border 0.3s ease;
+}
+
+/* Cambio de color de borde al enfoque */
+input[type="date"]:focus,
+input[type="number"]:focus,
+select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Estilo específico para checkboxes */
+.checkbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/* Botón de búsqueda */
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  width: 100%;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.2);
+}
+
+/* Efecto hover en el botón */
+button:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px);
+}
+
+/* Efecto cuando se hace clic en el botón */
+button:active {
+  background-color: #004494;
+  transform: translateY(1px);
+}
+
+/* Lista de vuelos disponibles */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+/* Estilo de los elementos de la lista */
+li {
+  padding: 15px 0;
+  border-bottom: 1px solid #ddd;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+/* Mensaje cuando no hay vuelos disponibles */
+p {
+  font-size: 1rem;
+  color: #999;
+  margin-top: 20px;
+}
